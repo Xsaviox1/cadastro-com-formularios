@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="shortcut icon" href="assets\models\sign-up_icon-icons.com_52416.ico" type="image/x-icon">
+    <script src="assets\js\script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Cadastro | José Sávio</title>
+</head>
+<body>
+    <div class="container">
+        <div id="foto">
+            <img src="assets\img\undraw_welcome_re_h3d9.svg">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                    <div class="login-button">
+                        <button><a href="#">Entrar</a></button>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="fistname">Primeiro nome</label>
+                        <input id="fistname" type="text" name="fistname" placeholder="Digite o seu primeiro nome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite o seu sobrenome" required>
+                    </div>  
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" name="email" placeholder="Digite o seu email" required>
+                    </div>  
+                    <div class="input-box">
+                        <label for="number">Número de telefone</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxxx-xxxx" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite a sua senha" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="conf-password">Confirme sua senha</label>
+                        <input id="conf-password" type="password" name="conf-password" placeholder="Digite a senha novamente" required>
+                    </div>     
+                </div>
+                <div class="gender-inputs">
+                    <div class="gender-titles">
+                        <h6>Gênero</h6>
+                    </div>
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input type="radio" id="female">
+                            <label for="female">Feminino</label>
+                        </div>
+                        <div class="gender-input">
+                            <input type="radio" id="male">
+                            <label for="male">Masculinino</label>
+                        </div>
+                        <div class="gender-input">
+                            <input type="radio" id="outhers">
+                            <label for="outhers">Outros</label>
+                        </div>
+                        <div class="gender-input">
+                            <input type="radio" id="none">
+                            <label for="none">Prefiro não dizer</label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="continue-button">
+                    <button onclick="abrirAlerta()"><a href="#">Continuar</a></button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>
